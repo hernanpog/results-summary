@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h1, p {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+@media screen and (min-width: 376px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 38.282%;
+    min-width: 735px;
+    border-radius: 2em;
+    box-shadow: 0.6em 2.25em 3em hsla(225, 100%, 31%, 0.1);
+  }
+}
+
+.test-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 0 0 2em 2em;
+  padding: 1.4em 2.5em;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 376px) {
+  .test-result {
+    border-radius: 2em;
+    padding: 2.4em 3em 2.178em;
+    margin: 0;
+    width: 50%;
+    max-width: 368px;
+    min-height: 505px;
+  }
+}
+
+.test-result h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 1.4em;
+}
+
+@media screen and (min-width: 376px) {
+  .test-result h1 {
+    margin-bottom: 1.45em;
+    font-size: 1.5rem;
+  }
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  width: 47%;
+  border-radius: 100%;
+  margin-bottom: 1.6em;
+  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+@media screen and (min-width: 376px) {
+  .score-container {
+    width: 72.5%;
+    margin-bottom: 1.925em;
+  } 
+}
+
+.overall-score {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+  .overall-score {
+    font-size: 1.15rem;
+    line-height: 1.17;
+  } 
+}
+
+.overall-score span {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 376px) {
+  .overall-score span {
+    font-size: 4.475rem;
+    margin-top: 0.07em;
+  } 
+}
+
+.great {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.4em;
+}
+
+@media screen and (min-width: 376px) {
+  .great {
+    font-size: 2rem;
+    margin-bottom: 0.48em;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin-bottom: 1.1em;
+  line-height: 1.22;
+}
+
+@media screen and (min-width: 376px) {
+  .description {
+    font-size: 1.15rem;
+  } 
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-bottom: 0.4em;
+}
+
+@media screen and (min-width: 376px) {
+  .summary {
+    width: 39.3%;
+    max-width: 288.6px;
+    margin: 2.4em auto;
+  }
+}
+
+.summary h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1.4em;
+}
+
+@media screen and (min-width: 376px) {
+  .summary h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.175em;
+  }
+}
+
+.skill {
+  display: flex;
+}
+
+.skill img {
+  margin-right: 0.85em;
+}
+
+.reaction, .memory, .verbal, .visual {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.7em;
+  padding: 1.2em;
+  font-size: .95rem;
+  font-weight: 500;
+  margin-bottom: 1.05em;
+}
+@media screen and (min-width: 376px) {
+  .reaction, .memory, .verbal, .visual {
+    font-size: 1.1rem;
+    padding: .9em;
+    margin-bottom: 1em;
+  }
+}
+
+.reaction {
+  color: hsl(0, 74%, 62%);
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.06);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.score span {
+  color: hsla(224, 30%, 27%, 0.45);
+}
+
+.continue {
+  width: 100%;
+  padding: .95em;
+  margin-top: 0.55em;
+  border-style: none;
+  border-radius: 3em;
+  font-size: 1.1rem;
+  font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+}
+
+@media screen and (min-width: 376px) {
+  .continue {
+    margin-top: 1.35em;
+  }
+}
+
+.continue:hover {
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
