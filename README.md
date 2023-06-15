@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/hernanpog/Results-summary-component)
-- Live Site URL: [Live Site](https://hernanpog.github.io/Results-summary-component)
+- Solution URL: [Github]((https://github.com/hernanpog/results-summary))
+- Live Site URL: [Live Site]((https://hernanpog.github.io/results-summary))
 
 ## My process
 
